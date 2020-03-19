@@ -42,10 +42,15 @@ header p{
 /*---------------------------------------------
 Main - cards Boxes
 ---------------------------------------------*/
+.cards{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
 .cards-item{
 	width: 300px;
 	height: 200px;
-	margin: 30px auto;
+	margin: 15px 15px;
 	padding: 40px;
 	border-radius: 8px;
 	box-shadow: 0px 13px 25px -4px #C0D0DF;
@@ -91,6 +96,13 @@ Main - cards Boxes
 	top: 0px;
 	left: 0px;
 }
+.middle-section{
+	margin: 0;
+	padding: 0;
+}
+.cards-karma{
+	margin-top: 30px;
+}
 /*---------------------------------------------
 Main - cards Typography
 ---------------------------------------------*/
@@ -124,9 +136,15 @@ Media Queries
 	header h1{
 		font-size: 40px;
 	}
+}
+@media only screen and (min-width: 1300px){
+	.cards{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
 
 }
-
 
 
 
